@@ -8,13 +8,10 @@ const cheeses = [
 ];
 
 const getSelectedCheeses = () => {
-  const getSelectedCheeses = [];
   // get all cheese checkboxes
-
-
+  const getSelectedCheeses = [];
+  
   // keep the checked ones in a new array
-
-
 const cheeseCheckboxes = document.getElementsByClassName('cheese');
 for(let j = 0; j < cheeseCheckboxes.length; j++){
   for(let k = 0; k < cheeses.length; k++){
@@ -22,8 +19,8 @@ for(let j = 0; j < cheeseCheckboxes.length; j++){
       getSelectedCheeses.push(cheeses[k]);
     }
   }
-
 }
+
 // return the array
 return getSelectedCheeses;
 };
